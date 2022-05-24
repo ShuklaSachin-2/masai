@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Cards</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+    .container{
+        width: 70%;
+        height: 380px;
+        /* border: 2px solid red; */
+        margin: auto;
+        display: flex;
+        /* background-color: rgba(128, 128, 128, 0.13); */
+        margin-bottom: 10px;
+    }
+    .container div{
+        width: 30%;
+        height: 380px;
+        /* border: 2px solid black; */
+        margin:  auto;
+        margin-top: 10px;
+        box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+        margin-bottom: 5px;
+
+    }
+    img{
+        width: 100%;
+        height: 200px;
+    }
+    .container div>img>h1{
+        /* font-weight: bold; */
+        font-size:  5px;
+    }
+    h1+h4{
+        margin-top: 30px;
+    }
+    h4{
+        color: gray;
+        font-size: 20px;
+        font-family: sans-serif;
+    }
+    h1{
+        font-size: 27px;
+        font-family: sans-serif;
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div>
+            <img src="https://cdn.pixabay.com/photo/2015/12/04/14/05/code-1076536__480.jpg" alt="error">
+        <h1>UK and US join forces to strike back in cyber space</h1>
+        <h4>| TECHNOLOGY</h4>
+    </div>
+        <div>
+             <img src="https://ic-cdn.flipboard.com/foxnews.com/abba3221f0a0c958f7623a547bb15993f6ae2bd3/_medium.webp" alt="error">
+        <h1>Tiger Woods withdraws after Round 3 and announces </h1>
+        <h4>| SPORTS</h4>
+        </div>
+        <div>
+             <img src="https://ic-cdn.flipboard.com/gannett-cdn.com/6216340b44c011bf5f22de973c500e806ca2a297/_medium.webp" alt="error">
+        <h1>NFL World Reacts To Deshaun Watson Lawyer News</h1>
+        <h4>| BUSINESS</h4>
+        </div>
+    </div>
+     <div class="container">
+        <div>
+            <img src="https://ic-cdn.flipboard.com/gannett-cdn.com/9e0eff9566e7e068f27dcca51b50ea553b485bc3/_medium.webp" alt="error">
+        <h1>Pro struck in head by ball shares photo of effect — and it’s</h1>
+        <h4> | SCIENCE AND ENVIRONMENT</h4>
+    </div>
+        <div>
+             <img src="https://ic-cdn.flipboard.com/mashable.com/31fa0ea9d2514e0a4a4a160011022425259e8177/_medium.webp" alt="error">
+        <h1>UK and US join forces to strike back in cyber space</h1>
+        <h4>| EUROPE</h4>
+        </div>
+        <div>
+             <img src="https://ic-cdn.flipboard.com/frommers.com/8ddf62fdfef3c9520a9fec3be4a57e35c3dd585f/_medium.webp" alt="error">
+        <h1>Celebrity Cruises Is Running a Jaw-Dropping Sale</h1>
+        <h4>| Asia</h4>
+        </div>
+    </div>
+</body>
+</html>

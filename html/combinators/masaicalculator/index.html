@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <style>
+        h1{
+            text-align: center;
+            margin-top: 20px;
+            font-size: 50px;
+            color: rgba(39, 169, 125, 0.888);
+            
+        }
+    .container>div{
+        width: 26%;
+        height: 350px;
+        /* border: 2px solid red; */
+        margin: auto;
+       box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+
+    }
+    .container>div>div{
+        width: 80%;
+        height: 40px;
+        /* border: 2px solid red; */
+        margin: auto;
+        
+        border-radius: 8px;
+        box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+        margin-top: 20px;
+    }
+    table{
+        margin: auto;
+        margin-top: 20px;
+
+    }
+    button{
+        width: 75px;
+        height: 58px;
+        background-color: white;
+        font-size: 30px;
+        font-weight: 700;
+        border-radius: 8px;
+        border-color: white;
+        
+
+    }
+    tr>td:last-child>button{
+        background-color: black;
+        color: white;
+
+    
+    }
+    #clear{
+        background-color: red;
+        color: white;
+    }
+    #result{
+        background-color: black;
+        color: white;
+    }
+    
+    
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Masai calculator</h1>
+
+
+        <div>
+            <div></div>
+            <table>
+                <tr>
+                    <td><button>1</button></td>
+                    <td><button>2</button></td>
+                    <td><button>3</button></td>
+                    <td><button >+</button></td>
+
+                </tr>
+                <tr>
+                    <td><button>4</button></td>
+                    <td><button>5</button></td>
+                    <td><button>6</button></td>
+                    <td><button>-</button></td>
+
+                </tr>
+                <tr>
+                    <td><button>7</button></td>
+                    <td><button>8</button></td>
+                    <td><button>9</button></td>
+                    <td><button>x</button></td>
+
+                </tr>
+                <tr>
+                    <td><button id="clear">C</button></td>
+                    <td><button>0</button></td>
+                    <td><button id="result">=</button></td>
+                    <td><button >/</button></td>
+
+                </tr>
+            </table>
+        </div>
+
+    </div>
+</body>
+</html>
