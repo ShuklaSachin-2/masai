@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: black;
+        }
+        #container{
+            width: 50%;
+            height: 400px;
+            justify-content: center;
+            
+            border: 1px solid transparent;
+            background-color: aliceblue;
+            margin: auto;
+            margin-top: 80px;
+            display: grid;
+            grid-template-columns: repeat(4,150px);
+            grid-template-rows: repeat(3,100px);
+            gap: 20px;
+            grid-template-areas: 
+            "a a b b"
+            "c d d d"
+            "e e e e" ;
+            
+            
+        }
+        #container > div{
+            background-color: grey;
+            display: grid;
+            /* justify-content: center; */
+            align-items: center;
+            font-size: 30px;
+            text-align: left;
+            padding: 20px;
+            /* margin-top: 30px; */
+        }
+        #container>div:nth-child(1){
+            grid-area: a;
+            color: white;
+            /* text-align: left; */
+        }
+        #container>div:nth-child(2){
+            grid-area: b;
+            color: white;
+        }
+        #container>div:nth-child(3){
+            grid-area: c;
+            color: white;
+        }
+        #container>div:nth-child(4){
+            grid-area: d;
+            color: white;
+        }
+        #container>div:nth-child(5){
+            grid-area: e;
+            color: white;
+        }
+       
+        
+        
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div>A</div>
+        <div>B</div>
+        <div>C</div>
+        <div>D</div>
+        <div>E</div>
+        
+    </div>
+</body>
+</html>

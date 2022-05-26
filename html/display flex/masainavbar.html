@@ -18,12 +18,12 @@
         #navbar>div:first-child{
             width: 10%;
             height: 100%;
-            border: 1px solid red;
+            /* border: 1px solid red; */
         }
         #navbar>div:last-child{
             width: 70%;
             height: 100%;
-            border:  1px solid black;
+            /* border:  1px solid black; */
             display: flex;
             justify-content: space-around;
 
@@ -36,6 +36,12 @@
                 text-transform: uppercase;
                 font-size: 14px;
                 align-items: center;
+                font-family: sans-serif;
+                font-weight: 400;
+        
+            }
+            #navbar>div:hover{
+                color: red;
             }
 
             p+div{
@@ -46,7 +52,7 @@
             p+div>img{
                 width: 20px;
                 height: 20px;
-                border: 1px solid red;
+                /* border: 1px solid red; */
                 margin-right: 40px;
             }
             select{
@@ -54,6 +60,14 @@
             }
             button{
                 padding: 10px;
+                background-color: white;
+                border-color: red;
+                color: red;
+                font-size: 20px;
+                text-transform: uppercase;
+                border-radius: 5px;
+
+
             }
     </style>
 </head>

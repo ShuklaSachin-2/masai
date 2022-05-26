@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid coffee</title>
+    <style>
+        #box{
+            width: 80%;
+            border: 1px solid red;
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: repeat(3,200px);
+            margin: auto;
+
+        }
+        #box>div{
+            /* dont give height and width to child */
+            /* display: grid; */
+            border: 1px solid black;
+        }
+        #box>div>div{
+            /* display: flex; */
+            justify-content: space-between;
+            
+        }
+    </style>
+</head>
+<body>
+    <div id="box">
+        <div>
+            <div>
+                <p>cappaccino</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut, provident.</p>
+            </div>
+        </div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+</body>
+</html>
